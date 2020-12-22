@@ -15,6 +15,18 @@
 
 ___
 
+#### usage
+```shell
+# build install
+git clone https://github.com/fanfq/mysql_markdown.git
+cd mysql_markdown
+go get "github.com/go-sql-driver/mysql"
+go build -o /usr/local/bin/mysql_markdown mysql_markdown.go
+chmod +x /usr/local/bin/mysql_markdown
+
+mysql_markdown -d dbname -o /Users/fred/Desktop/123/d.md
+```
+
 
 #### 背景
 
