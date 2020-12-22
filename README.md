@@ -37,6 +37,15 @@ mysql_markdown -d dbname -o /Users/fred/Desktop/123/d.md
 ```
 
 
+```
+mysql_markdown -h 127.0.0.1 \
+-u root \
+-p root \
+-d dbname \
+-o /Users/fred/Desktop/123/d.md
+```
+
+
 #### 背景
 
 在实施软件工程的时候，当要将某一版本归档时，需要汇总的文档要求还是比较高的、各类文档齐全，包括项目架构、项目安装、接口等文档，而数据库表结构说明文档亦属于其一。记得很早之前想找一个可以导出 `MySQL` 数据库表结构说明文档的工具，生态上的这种工具是有的、只不过并没有一个使我比较满足的。当然、看个人所需，我需要一个可以导出 `markdown` 文档的。
