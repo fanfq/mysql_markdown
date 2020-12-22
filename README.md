@@ -18,6 +18,15 @@ ___
 #### usage
 gopath
 ```
+wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
+tar -zxvf go1.15.6.linux-amd64.tar.gz
+echo "export GOROOT=/Users/fred/apps/go" >> ~/.profile
+echo "export GOPATH=/Users/fred/apps/go_path" >> ~/.profile
+echo "export PATH=$PATH:$GOROOT/bin" >> ~/.profile
+echo "export PATH=$PATH:$GOPATH/bin" >> ~/.profile
+source ~/.profile
+go version
+
 #go   
 export GOROOT=/Users/fred/apps/go;  
 export GOPATH=/Users/fred/apps/go_path;  
