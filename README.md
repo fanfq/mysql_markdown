@@ -20,11 +20,12 @@ gopath
 ```
 wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
 tar -zxvf go1.15.6.linux-amd64.tar.gz
-echo "export GOROOT=/Users/fred/apps/go" >> ~/.profile
-echo "export GOPATH=/Users/fred/apps/go_path" >> ~/.profile
-echo "export PATH=$PATH:$GOROOT/bin" >> ~/.profile
-echo "export PATH=$PATH:$GOPATH/bin" >> ~/.profile
-source ~/.profile
+echo "export GOROOT=/opt/apps/go" >> /etc/profile
+echo "export GOPATH=/opt/apps/go_path" >> /etc/profile
+echo "export PATH=/opt/apps/go/bin" >> /etc/profile
+echo "export PATH=/opt/apps/go_path/bin" >> /etc/profile
+echo "export GOPROXY=https://goproxy.io" >> /etc/profile
+source /etc/profile
 go version
 
 #go   
@@ -40,8 +41,8 @@ export GOPROXY=https://goproxy.io
 git clone https://github.com/fanfq/mysql_markdown.git
 cd mysql_markdown
 go get "github.com/go-sql-driver/mysql"
-go build -o /usr/local/bin/mysql_markdown mysql_markdown.go
-chmod +x /usr/local/bin/mysql_markdown
+go build -o /etc/go/bin/mysql_markdown mysql_markdown.go
+chmod +x /etc/go/bin/mysql_markdown
 
 mysql_markdown -d dbname -o /Users/fred/Desktop/123/d.md
 ```
