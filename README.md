@@ -32,6 +32,7 @@ export GOROOT=/Users/fred/apps/go;
 export GOPATH=/Users/fred/apps/go_path;  
 export PATH=$PATH:$GOROOT/bin;
 export PATH=$PATH:$GOPATH/bin;
+export GOPROXY=https://goproxy.io
 ```
 
 ```shell
